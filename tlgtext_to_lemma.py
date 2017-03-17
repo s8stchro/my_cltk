@@ -40,7 +40,7 @@ def imcalem_tlg_authors():
     clf = clf.replace('(', '').replace(')', '').replace('§','')
     # restore apostrophe
     clf = clf.replace('$', '’')
-    # remplace grave with acute accent
+    # replace grave with acute accent
     clf = clf.replace('ὰ', 'ά').replace('ὲ', 'έ').replace('ὴ', 'ή').replace('ὶ', 'ί').replace('ὸ', 'ό').replace('ὼ', 'ώ').replace('ὺ', 'ύ').replace('ἂ', 'ἄ').replace('ἒ', 'ἔ').replace('ἢ', 'ἤ').replace('ἲ', 'ἴ').replace('ὂ', 'ὄ').replace('ὢ', 'ὤ').replace('ὒ', 'ὔ').replace('ἃ', 'ἅ').replace('ἓ', 'ἕ').replace('ἣ', 'ἤ').replace('ἳ', 'ἵ').replace('ὃ', 'ὅ').replace('ὣ', 'ὥ').replace('ὓ', 'ὕ')
 
     with open(bare_filename+'_clean.txt', 'w+') as f:
